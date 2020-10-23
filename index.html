@@ -51,9 +51,10 @@
         
             // The first parameter can be used to specify which mesh to import. Here we import all meshes
             BABYLON.SceneLoader.Append("https://dl.dropbox.com/s/olanqaql8l9ay21/", "sestava.glb", scene, function (newMeshes) {
-                scene.createDefaultCameraOrLight(true);
-                scene.activeCamera.attachControl(canvas, false);
-                scene.activeCamera.alpha += Math.PI; // camera +180°
+                        scene.createDefaultCameraOrLight(true);
+                        scene.activeCamera.attachControl(canvas, false);
+                        scene.activeCamera.alpha +=Math.PI
+                        scene.activeCamera.beta +=Math.PI/2
             });
         
             return scene;
@@ -79,8 +80,6 @@
         window.addEventListener("resize", function () {
             engine.resize();
         });
-    </script>
-    <img src="https://raw.githubusercontent.com/lachtannak/stipac/main/computer-icons-button-internet-software-as-a-service-flip-over-thumbnail.jpg" alt="Flowers in Chania">
-    
+    </script> 
 </body>
 </html>
